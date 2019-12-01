@@ -37,6 +37,15 @@ into
 no_reach = True
 ```
 
+### What i'm working on.
+
+```python
+def resolveMac(mac):
+    url = "https://api.macvendors.com/" + str(mac)        #it's actuallt using urllib but i'm planing to use curl
+    b_str = urllib.request.urlopen(url).read()            #combined with grep and a string treatment, you'll get the vendor name faster
+    b_str = str(b_str, 'utf-8')                           #as well, you will not need the urllib library
+    return b_str
+```
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
