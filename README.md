@@ -26,6 +26,17 @@ i'll ad a PIP compatible file to install thoose directly.
 git clone https://github.com/b3rt1ng/MR_SCAN_V2
 ```
 
+### Features
+
+You can display all the ip scanned by changing line 6
+```python
+no_reach = False
+```
+into
+```python
+no_reach = True
+```
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
