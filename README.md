@@ -34,6 +34,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Do not use this script for any illegal purposes.
 
-### Limitations
-the script is using a ping subprocees to check if a host is  up or not. because of the basics parameters of the ping command, the time between each ping cannot go below 1 second. if you want to do a faster ping scan, i higly recommand you to follow [this guide](https://null-byte.wonderhowto.com/how-to/turbo-ping-sweeping-with-python-0163098/). You can also use Nmap to scan a network precisely and pretty fastly. do your research...
-
