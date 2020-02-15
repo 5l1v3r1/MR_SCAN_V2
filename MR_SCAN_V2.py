@@ -7,7 +7,12 @@ no_reach = False
 max_range = 255
 discovered_ip = []
 ver = str(2.0)
-ip_str = str(ni.ifaddresses('eth0')[ni.AF_INET][0]['addr'])
+def lip():
+        ip_string=str(os.popen('ifconfig | grep -E "([0-9]{1,3}[\.]){3}[0-9]{1,3}"').readlines())[15:];result="";i=0
+        while ip_string[i]!=" ":result=result+ip_string[i];i=i+1
+        return result
+
+ip_str = lip()
 BLUE, RED, WHITE, YELLOW, MAGENTA, GREEN, END = '\33[94m', '\033[91m', '\33[97m', '\33[93m', '\033[1;35m', '\033[1;32m', '\033[0m'
 
 def getip():
