@@ -1,7 +1,5 @@
 import socket, os, sys, subprocess, time, signal, uuid
-import netifaces as ni
 import urllib.request
-from scapy.all import *
 global ip_str, discovered_ip, max_range, no_reach
 no_reach = False
 max_range = 255
